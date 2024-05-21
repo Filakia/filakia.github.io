@@ -125,29 +125,37 @@ body {
 body{
   background-image: url(assets/VELZIA_PINTOR_ROSALES_64_WEB_003.jpg);
   background-repeat: no-repeat;
-  
+  background-size: cover;
   background-position: center;
-
-  position: relative;
 }
 
+main{
+  position: relative;
+  padding: 2rem;
+  z-index: 1;
+
+}
 .tittle__wrapper{
   
-  position: absolute;
-  z-index: 2;
+  /* position: absolute; */
+  /* z-index: 2; */
   margin-top: 5rem;
-  left: calc(50% - (330px/2));
+  /* left: calc(50% - (330px/2)); */
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 
 }
 
 .background__opacity{
   background-color: rgba(0, 0, 0, 0.481);
   width: 100%;
-  min-height: 134vh;
+  min-height: 100vh;
   position: absolute;
   top:0;
   left:0;
-  z-index: 1;
+  z-index: 0;
 }
 
 .countdown-wrapper{
@@ -159,8 +167,6 @@ body{
   max-width: 100%;
 
   margin-bottom: 80px;
-
-  
 }
 
 #countdown-timer {
@@ -261,6 +267,24 @@ body{
   background: pink;
 } */
 
-@media(max-width:900px){
-  
+
+
+@media(max-width:480px){
+  .tittle_text{
+    font-size: 22px;
+  }
+
+  .h1__logo{
+    width: 70px;
+  }
+
+  #countdown-timer{
+    font-size: 35px;
+  }
+
+  .countdown-wrapper{
+    padding: 1rem 1rem;
+  }
+
+
 }
