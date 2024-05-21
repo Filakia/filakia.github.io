@@ -1,5 +1,5 @@
 // Establecer la fecha de lanzamiento del producto (reemplaza con tu fecha y hora)
-var launchDate = new Date('2024-06-01T00:00:00Z');
+var launchDate = new Date('2024-08-01T00:00:00Z');
 
 // Función para actualizar el contador de cuenta regresiva
 function updateCountdown() {
